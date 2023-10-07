@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<section>
+    <h2>RSVP</h2>
+    <p>Please RSVP by [RSVP Deadline].</p>
+    <form method="POST">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <input type="submit" value="Submit RSVP">
+    </form>
+</section>
+{% endblock %}
